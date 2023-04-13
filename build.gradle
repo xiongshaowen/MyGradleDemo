@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'war'
+    id 'idea'
+
+}
+
+
+
+repositories {
+    mavenCentral()
+}
+
+
+
+group 'cn.xiong.gradle'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+
+dependencies {
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    implementation group: 'org.mybatis', name: 'mybatis-spring', version: '3.0.1'
+
+}
+
+test {
+    useJUnitPlatform()
+}
